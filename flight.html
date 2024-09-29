@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search Form</title>
+    <link rel="stylesheet" href="flight.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+
+<div class="container">
+    <h2>Flight Search <i class="ri-flight-takeoff-line"></i></h2>
+    <form>
+
+<span><h4>FROM</h4></span>
+ <input type="text" placeholder="City Or Airport">
+
+
+ <span><h4>TO</h4></span>
+<input type="text" placeholder="City Or Airport">
+
+<span><H4>RETURN</H4></span>
+<input type="text" placeholder="One Way">
+
+<span><h4>Departure</h4></span>
+<input type="datetime-local" placeholder="">
+
+<div class="half-width">
+    
+ <span><h4>ADULTS 12+</h4></span>
+            <select id="adults" name="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <div class="half">
+
+
+<span><h4>CHILDREN 2-14</h4></span>
+            <select id="children" name="children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+
+        <div class="half">
+
+             <span><h4>Infants less than 2</h4></span>
+            <select id="infants" name="infants">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+
+        <div class="half">
+            <span><h4>CABIN</h4></span>
+            <select id="cabin" name="cabin">
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <option value="first">First Class</option>
+            </select>
+        </div>
+
+        <div class="direct-flights">
+             <span><h4>DIRECT FLIGHT</h4></span>
+            <input type="checkbox" id="direct-flights" name="direct-flights">
+        </div>
+
+        <button class="btn-search"><h4>SEARCH FLIGHTS</h4></button>
+    </form>
+</div>
+
+</body>
+</html>
